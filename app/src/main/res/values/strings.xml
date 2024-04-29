@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Agenda Inteligente</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="estadisticas">Estadísticas</string>
+    <string name="diario">Diario</string>
+    <string name="home">Home</string>
+    <string name="agenda">Agenda</string>
+    <string name="vista_rapida">Vista Rápida</string>
+    <string name="default_level">1</string>
+    <string name="default_nickname">User12345</string>
+    <string name="t_tulo">Título</string>
+    <string name="descripci_n">Descripción</string>
+    <string name="dia_y_hora_de_inicio">Dia y hora de inicio</string>
+    <string name="dia_y_hora_de_fin">Dia y hora de fin</string>
+    <string name="alarma">Alarma</string>
+    <string name="d_as">Días</string>
+    <string name="horas">Horas</string>
+    <string name="minutos">Minutos</string>
+    <string name="antes">Antes</string>
+    <string name="c_mo_te_encuentras_hoy">¿Cómo te encuentras hoy?</string>
+    <string name="anotaciones_extra">Anotaciones extra</string>
+    <string name="todo">TODO</string>
+    <string name="estados_adicionales">ESTADOS ADICIONALES</string>
+</resources>

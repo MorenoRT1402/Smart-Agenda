@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".todelete.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#26659C">
+
+            <Button
+                android:id="@+id/btnNivelHome2"
+                android:layout_width="56dp"
+                android:layout_height="63dp"
+                android:layout_marginStart="10px"
+                android:layout_weight="1"
+                android:background="@drawable/btn_nivel"
+                android:text="1"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tVUsuarioHome2"
+                android:layout_width="wrap_content"
+                android:layout_height="88dp"
+                android:layout_weight="50"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/cardview_light_background"
+                android:gravity="center_vertical"
+                android:text="User12345"
+                android:textSize="24sp"
+                android:textStyle="normal|bold"/>
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="563dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="#E4E47B">
+
+                <Button
+                    android:id="@+id/btnDiario"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_diario"
+                    android:backgroundTint="#9C27B0"
+                    android:drawableStart="@drawable/baseline_tag_faces_24"
+                    android:gravity="center"
+                    android:scaleX="1"
+                    android:scaleY="0.33"
+                    app:cornerRadius="30px" />
+
+                <Button
+                    android:id="@+id/btnAgenda"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_agenda"
+                    android:drawableStart="@drawable/baseline_calendar_today_24"
+                    android:gravity="center"
+                    android:scaleX="0.8"
+                    android:scaleY="0.33"
+                    app:cornerRadius="30px" />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#26659C"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAjustesDiarioHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Ajustes Diario" />
+
+            <Button
+                android:id="@+id/btnEstadisticasHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Estadisticas" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

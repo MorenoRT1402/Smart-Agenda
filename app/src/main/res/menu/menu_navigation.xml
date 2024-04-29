@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/statsItem"
+        android:icon="@drawable/ic_stats"
+        android:title="@string/estadisticas" />
+
+    <item
+        android:id="@+id/diaryItem"
+        android:icon="@drawable/ic_diary"
+        android:title="@string/diario" />
+
+    <item
+        android:id="@+id/homeItem"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/agendaItem"
+        android:icon="@drawable/ic_agenda"
+        android:title="@string/agenda" />
+
+    <item
+        android:id="@+id/quickViewItem"
+        android:icon="@drawable/ic_quick_view"
+        android:title="@string/vista_rapida" />
+
+</menu>

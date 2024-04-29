@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3A3737"
+    android:orientation="vertical"
+    tools:context=".activities.DayHomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#E4B318">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EAD286"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/eTNombreTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:hint="@string/t_tulo"
+                    android:inputType="textPersonName"
+                    android:textSize="25dp" />
+
+                <EditText
+                    android:id="@+id/eTDescripcionTarea"
+                    android:layout_width="match_parent"
+                    android:layout_height="115dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:autofillHints=""
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/descripci_n"
+                    android:inputType="textMultiLine"
+                    android:textSize="25dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EAD286"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tVFechaInicioDayHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/dia_y_hora_de_inicio"
+                    android:textColor="#6D4C41"
+                    android:textSize="23dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dPDiaInicio"
+                        android:layout_width="190dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        android:autofillHints=""
+                        android:ems="10"
+                        android:inputType="date"
+                        android:clickable="false"
+                        android:focusable="false"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <EditText
+                        android:id="@+id/eTHoraInicioDayHome"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="3"
+                        android:autofillHints=""
+                        android:ems="10"
+                        android:inputType="time"
+                        android:clickable="false"
+                        android:focusable="false"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAD286">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#EAD286"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tVFechaFinDayHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="@string/dia_y_hora_de_fin"
+                    android:textColor="#6D4C41"
+                    android:textSize="23dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/dPDiaFin"
+                        android:layout_width="190dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="0"
+                        android:autofillHints=""
+                        android:ems="10"
+                        android:inputType="date"
+                        android:clickable="false"
+                        android:focusable="false"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/eTDiaFinDayHome"-->
+<!--                        android:layout_width="190dp"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:layout_marginStart="20dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:layout_weight="0"-->
+<!--                        android:autofillHints=""-->
+<!--                        android:ems="10"-->
+<!--                        android:inputType="date"-->
+<!--                        tools:ignore="SpeakableTextPresentCheck" />-->
+
+                    <EditText
+                        android:id="@+id/eTHoraFinDayHome"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="50dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="3"
+                        android:autofillHints=""
+                        android:ems="10"
+                        android:inputType="time"
+                        android:clickable="false"
+                        android:focusable="false"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/eTHoraFinDayHome"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:layout_marginStart="50dp"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_marginEnd="50dp"-->
+<!--                        android:layout_marginBottom="10dp"-->
+<!--                        android:layout_weight="3"-->
+<!--                        android:autofillHints=""-->
+<!--                        android:ems="10"-->
+<!--                        android:inputType="time"-->
+<!--                        tools:ignore="SpeakableTextPresentCheck" />-->
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="#E4B318"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EAD286"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/tVAlarma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/alarma"
+                    android:textColor="#6D4C41"
+                    android:textSize="23dp" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/eTDiasDayHome"
+                            android:layout_width="60dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:autofillHints=""
+                            android:ems="10"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:id="@+id/tVDiasDayHome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="@string/d_as"
+                            android:textColor="#6D4C41"
+                            android:textSize="23dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/eTHorasDayHome"
+                            android:layout_width="60dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:autofillHints=""
+                            android:ems="10"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:id="@+id/tVHorasDayHome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="@string/horas"
+                            android:textColor="#6D4C41"
+                            android:textSize="23dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/eTMinutosDayHome"
+                            android:layout_width="60dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:autofillHints=""
+                            android:ems="10"
+                            android:inputType="number"
+                            android:maxLength="2"
+                            android:maxLines="1"
+                            tools:ignore="SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:id="@+id/tVMinutosDayHome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:text="@string/minutos"
+                            android:textColor="#6D4C41"
+                            android:textSize="23dp" />
+                    </TableRow>
+
+                </TableLayout>
+
+                <TextView
+                    android:id="@+id/tVAntes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="34dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/antes"
+                    android:textColor="#6D4C41"
+                    android:textSize="23dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnEnviarTarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Guardar"
+            android:textSize="30dp"
+            android:translationY="25dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

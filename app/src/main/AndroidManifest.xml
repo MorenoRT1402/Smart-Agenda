@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AgendaInteligente"
+        tools:targetApi="31">
+        <activity
+            android:name=".activities.DayHomeViewActivity"
+            android:exported="false" />
+
+        <receiver
+            android:name=".manager.NotificationReceiver"
+            android:enabled="true" />
+
+        <activity
+            android:name=".activities.DayAgendaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DayHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DiaryTwoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.DayDiaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.AgendaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".todelete.DiaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.access.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.access.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".todelete.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.access.LauncherActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

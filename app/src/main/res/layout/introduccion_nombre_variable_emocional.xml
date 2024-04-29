@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <EditText
+        android:id="@+id/eTNombreVariableEmocional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="Nombre de la variable"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnGuardarNombreVariableEmocional"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:backgroundTint="#9C27B0"
+        android:text="Ok"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+</LinearLayout>
